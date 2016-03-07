@@ -1,7 +1,7 @@
 // Scripts placed in server/boot will run at server start.
 // This script will drop and recreate test data in the database.
 module.exports = function(app) {
-  app.dataSources.MongDs.automigrate('CoffeeShop', function(err) {
+  app.dataSources.MongoDs.automigrate('CoffeeShop', function(err) {
     if (err) throw err;
  
     app.models.CoffeeShop.create([
