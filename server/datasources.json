@@ -8,8 +8,6 @@
     "connector": "mongodb",
     "host": "localhost",
     "port": 27017,
-    "database": "loopback_getting_started",
-    "username": "demo",
-    "password": "L00pBack"
+    "database": "loopback_getting_started"
   }
 }
