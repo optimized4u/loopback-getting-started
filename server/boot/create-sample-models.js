@@ -29,7 +29,7 @@ module.exports = function(app) {
   }
   //create coffee shops
   function createCoffeeShops(cb) {
-    mysqlDs.automigrate('CoffeeShop', function(err) {
+    mongoDs.automigrate('CoffeeShop', function(err) {
       if (err) return cb(err);
       var CoffeeShop = app.models.CoffeeShop;
       CoffeeShop.create([
