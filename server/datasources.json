@@ -6,7 +6,7 @@
   "MongoDs": {
     "host": "localhost",
     "port": 27017,
-    "database": "loopback_getting_started",
+    "database": "getting_started_intermediate",
     "name": "MongoDs",
     "connector": "mongodb"
   },
