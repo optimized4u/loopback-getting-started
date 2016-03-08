@@ -3,11 +3,11 @@
     "name": "db",
     "connector": "memory"
   },
-  "MongoDs": {
+  "mongoDs": {
     "host": "localhost",
     "port": 27017,
     "database": "getting_started_intermediate",
-    "name": "MongoDs",
+    "name": "mongoDs",
     "connector": "mongodb"
   },
   "mysqlDs": {
