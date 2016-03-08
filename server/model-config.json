@@ -14,22 +14,22 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "MongoDs"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "MongoDs",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "MongoDs",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "MongoDs",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "MongoDs",
     "public": false
   },
   "CoffeeShop": {
