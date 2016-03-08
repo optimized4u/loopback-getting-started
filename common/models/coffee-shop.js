@@ -25,7 +25,6 @@ module.exports = function(CoffeeShop) {
 
   // Another Remote Method example to GET shop name.
   // Try http://localhost:3000/explorer/#!/CoffeeShop/CoffeeShop_getName to test.
-  // NOTE: Will not work with MongoDB id as it's a string.
   CoffeeShop.getName = function(shopId, cb) {
     CoffeeShop.findById(shopId, function(err, instance) {
       response = "Name of coffee shop is " + instance.name;
