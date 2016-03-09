@@ -35,8 +35,6 @@
             <li>
               <a ui-sref="all-reviews" ui-sref-active="active">All reviews</a>
             </li>
-            <li ng-hide="currentUser">
-              <a ui-sref="sign-up" ui-sref-active="active">Sign up</a>
             </li>
             <li ng-show="currentUser">
               <a ui-sref="my-reviews" ui-sref-active="active">My Reviews</a>
@@ -46,18 +44,21 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li ng-hide="currentUser">
-              <a ui-sref="login" ui-sref-active="active"><span class="glyphicon glyphicon-log-in"></span>Log in</a>
-            </li>
             <li ng-show="currentUser">
-              <a ui-sref="logout" ui-sref-active="active"><span class="glyphicon glyphicon-log-out"></span>Log out</a>
+              <a ui-sref="my-reviews" ui-sref-active="active"><span class="glyphicon glyphicon-user"></span>{{currentUser.email}}</a>
             </li>
+            <li ng-hide="currentUser">
+              <a ui-sref="sign-up" ui-sref-active="active">Sign up</a>
+              <li ng-hide="currentUser">
+                <a ui-sref="login" ui-sref-active="active"><span class="glyphicon glyphicon-log-in"></span>Log in</a>
+              </li>
+              <li ng-show="currentUser">
+                <a ui-sref="logout" ui-sref-active="active"><span class="glyphicon glyphicon-log-out"></span>Log out</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
-    <p ng-show="currentUser"><span class="glyphicon glyphicon-user"></span>{{currentUser.email}}
-      <p>
   </header>
 
   <!-- Insert partial page views here -->
