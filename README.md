@@ -7,3 +7,5 @@ and [Part II](https://docs.strongloop.com/display/public/LB/Getting+started+part
 
 > Personally I think from my initial limited experience with it, Loopback is going to radically speed up my cross platform app developement using the MEAN stack.
 
+## In Progress
+Currently tarting up client views with Bootstrap.
