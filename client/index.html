@@ -19,30 +19,34 @@
 
 <body>
   <header>
-    <h1>Coffee Shop Reviews</h1>
-    <h2 ng-show="currentUser">Hello {{currentUser.email}}</h2>
-    <nav>
-      <ul>
-        <li>
-          <a ui-sref="all-reviews" ui-sref-active="active">All reviews</a>
-        </li>
-        <li ng-hide="currentUser">
-          <a ui-sref="sign-up" ui-sref-active="active">Sign up</a>
-        </li>
-        <li ng-show="currentUser">
-          <a ui-sref="my-reviews" ui-sref-active="active">My Reviews</a>
-        </li>
-        <li ng-show="currentUser">
-          <a ui-sref="add-review" ui-sref-active="active">Add Review</a>
-        </li>
-        <li ng-hide="currentUser">
-          <a ui-sref="login" ui-sref-active="active">Log in</a>
-        </li>
-        <li ng-show="currentUser">
-          <a ui-sref="logout" ui-sref-active="active">Log out</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Coffee Shop Reviews</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li>
+            <a ui-sref="all-reviews" ui-sref-active="active">All reviews</a>
+          </li>
+          <li ng-hide="currentUser">
+            <a ui-sref="sign-up" ui-sref-active="active">Sign up</a>
+          </li>
+          <li ng-show="currentUser">
+            <a ui-sref="my-reviews" ui-sref-active="active">My Reviews</a>
+          </li>
+          <li ng-show="currentUser">
+            <a ui-sref="add-review" ui-sref-active="active">Add Review</a>
+          </li>
+          <li ng-hide="currentUser">
+            <a ui-sref="login" ui-sref-active="active">Log in</a>
+          </li>
+          <li ng-show="currentUser">
+            <a ui-sref="logout" ui-sref-active="active">Log out</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    <p ng-show="currentUser">Hello {{currentUser.email}}<p>
   </header>
 
   <!-- Insert partial page views here -->
