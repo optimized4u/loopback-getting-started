@@ -1,9 +1,10 @@
-<section>
-  <article ng-repeat="r in reviews.slice().reverse()">
-    <header>
-      <h1>{{r.date | date}} | {{r.coffeeShop.name}}</h1>
-      <h2>{{r.reviewer.email}}</h2>
-    </header>
-    <p>{{r.rating}}&#9733; - {{r.comments}}</p>
-  </article>
-</section>
+<article ng-repeat="r in reviews.slice().reverse()">
+  <div class="panel panel-primary">
+    <div class="panel-heading">{{r.coffeeShop.name}}</div>
+    <div class="panel-body">
+      <p>Comments: {{r.comments}}</p>
+      <p>My rating is {{r.rating}}&#9733;</p>
+    </div>
+    <div class="panel-footer">Reviewed by: <span class="yellow">{{r.reviewer.email}}</span> on {{r.date | date}}</div>
+  </div>
+</article>
