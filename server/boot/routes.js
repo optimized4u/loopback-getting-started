@@ -9,6 +9,6 @@ module.exports = function(app) {
   // Or the Loopback way without Express Router
   // Install a "/ping" route that returns "pong"
   app.get('/ping', function(req, res) {
-    res.send('pong');
+    res.send('Loopback pong');
   });
 }
