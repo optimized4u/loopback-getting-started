@@ -2,16 +2,37 @@
   <div class="panel panel-primary">
     <div class="panel-heading">{{r.coffeeShop.name}}</div>
     <div class="panel-body">
-      <p><span class="text-info">My Review: </span>{{r.comments}}</p>
-      <h2><span class="text-warning">{{r.rating}}&#9733;</span></h2>
-    </div> <!--End primary panel-body -->
+      <div class="row">
+        <div class="col-xs-12 col-md-10">
+          <p><span class="text-info">My Review: </span>{{r.comments}}</p>
+        </div>
+        <!--End col 1 -->
+        <div class="col-xs-4 col-md-2">
+          <div class="panel panel-success text-center">
+            <div class="panel-heading">My Rating</div>
+            <div class="panel-body">
+              <h2><span class="text-warning">{{r.rating}}&#9733;</span></h2>
+            </div>
+            <!--End panel-body -->
+          </div>
+          <!--End panel-success -->
+        </div>
+        <!--End col 2 -->
+      </div>
+      <!--End row -->
+    </div>
+    <!--End primary panel-body -->
     <div class="panel-footer">Reviewed by: <span class="text-info">{{r.reviewer.email}}</span> on {{r.date | date}}
       <div class="pull-right">
         <div class="actions" ng-show="currentUser">
           <button class="btn btn-success btn-xs" ui-sref="edit-review({ id: r.id })">Edit</button>
           <button class="btn btn-danger btn-xs" a ui-sref="delete-review({ id: r.id })">Delete</button>
-        </div> <!--End actions -->
-      </div> <!--End pull-right -->
-    </div> <!--End primary panel-footer -->
-  </div> <!--End panel-primary -->
+        </div>
+        <!--End actions -->
+      </div>
+      <!--End pull-right -->
+    </div>
+    <!--End primary panel-footer -->
+  </div>
+  <!--End panel-primary -->
 </article>
