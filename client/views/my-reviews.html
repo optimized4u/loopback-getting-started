@@ -3,12 +3,12 @@
     <div class="panel-heading">{{r.coffeeShop.name}}</div>
     <div class="panel-body">
       <p>{{r.comments}}</p>
-      <h2><span class="yellow">{{r.rating}}&#9733;</span></h2>
+      <h2><span class="text-warning">{{r.rating}}&#9733;</span></h2>
       <div class="actions" ng-show="currentUser">
         <button class="btn btn-success btn-xs" ui-sref="edit-review({ id: r.id })">Edit</button>
         <button class="btn btn-danger btn-xs" a ui-sref="delete-review({ id: r.id })">Delete</button>
       </div>
     </div>
-    <div class="panel-footer">Reviewed by: <span class="yellow">{{r.reviewer.email}}</span> on {{r.date | date}}</div>
+    <div class="panel-footer">Reviewed by: <span class="text-info">{{r.reviewer.email}}</span> on {{r.date | date}}</div>
   </div>
 </article>
